@@ -1,0 +1,22 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+
+WEIGHTS_DIR = BASE_DIR / "weights"
+SECRET_DIR = BASE_DIR / "secret"
+RUNS_DIR = BASE_DIR / "runs"
+
+YOLO26_FACE_WEIGHT = WEIGHTS_DIR / "yolo26n-face.pt"
+MASTER_KEY_PATH = SECRET_DIR / "master.key"
+
+DEFAULT_SESSION_NAME = "session_001"
+
+DEFAULT_IMG_SIZE = 640
+DEFAULT_CONF_THRES = 0.35
+DEFAULT_IOU_THRES = 0.45
+
+DEFAULT_PUBLIC_MASK_MODE = "black"
+DEFAULT_FACE_MARGIN_RATIO = 0.08
+
+DEFAULT_FPS = 30.0
+DEFAULT_CODEC = "mp4v"
